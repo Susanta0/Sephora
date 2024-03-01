@@ -1,3 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  /* background: black; */
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+.slick-slide > div {
+  margin: 0 5px;
+}
+
+.slick-prev,
+.slick-next {
+  /* margin: 0 10px; */
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background-color: Gray !important;
+  border-radius: 50%;
+}
+#productList {
+  transition: transform 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+#productList:hover {
+  transform: translatey(-5px);
+}
+#btn {
+  display: none;
+  position: absolute;
+  border: 1px solid;
+  padding: 0.3em 4.6em;
+  opacity: 0;
+}
+#productList:hover #btn {
+  opacity: 1;
+  display: block;
+}
+.btnCon:hover {
+  opacity: 1;
+}
+.full {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 5px;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

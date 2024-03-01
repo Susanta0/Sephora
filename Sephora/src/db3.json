@@ -1,0 +1,26 @@
+[
+   {
+        "task1":{
+            "id":1,
+            "title":"Foundation",
+            "images":"https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png?imwidth=106"
+        },
+        "task2":{
+            "id":1,
+            "title":"Foundation",
+            "images":"https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png?imwidth=106"
+        }
+    },
+    {
+        "task1":{
+            "id":1,
+            "title":"Foundation",
+            "images":"https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png?imwidth=106"
+        },
+        "task2":{
+            "id":1,
+            "title":"Foundation",
+            "images":"https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png?imwidth=106"
+        }
+    }
+]

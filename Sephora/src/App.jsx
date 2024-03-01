@@ -1,10 +1,13 @@
+import AllRoutes from "./AllRoutes/AllRoutes";
 import "./App.css";
-
-import Navbar from "./Components/Navbar";
+import { Routes,Route } from "react-router-dom";
 function App() {
   return (
     <>
-    <Navbar/>
+    <Routes>
+      <Route path="/" element={<AllRoutes/>}/>
+    </Routes>
+      
     </>
   );
 }
