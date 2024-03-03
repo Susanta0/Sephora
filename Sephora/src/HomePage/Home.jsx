@@ -1,13 +1,34 @@
+
 //NOTE react slider
 import Slider from "react-slick";
-import data from "../db.json";
+import {data}from "../db.js";
 //NOTE react slider css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 
-import { Button, Text,} from "@chakra-ui/react";
+import { useState } from "react";
+
+import { Button, Text, useDisclosure } from "@chakra-ui/react";
+import { Quickview } from "../QuickView/Quickview";
 const Home = ({ heading, linkText }) => {
+  const { isOpen, onClose, onOpen } = useDisclosure();
+
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  
+  const handleButtonClick = (product) => {
+    if (!isOpen) {
+      setSelectedProduct(product);
+    onOpen();
+    }
+  };
+
+  const handleModalClose = () => {
+    onClose();
+    setSelectedProduct(null); // Clear the selected product when the modal is closed
+  };
+  
+
   var settings = {
     infinite: false,
     speed: 1000,
@@ -63,6 +84,8 @@ const Home = ({ heading, linkText }) => {
                       alt="product image"
                     />
                     <Button
+                      // onClick={onOpen}
+                      onClick={() => handleButtonClick(ele)}
                       _hover={{ bg: "dimgray" }}
                       fontSize="12"
                       h={6}
@@ -100,9 +123,14 @@ const Home = ({ heading, linkText }) => {
           </Slider>
         </div>
       </div>
+      <Quickview
+        QuickOpen2={isOpen}
+        QuickOpen={onOpen}
+        QuickClose={handleModalClose}
+        selectedProduct={selectedProduct}
+      />
     </>
   );
 };
 
 export default Home;
-

@@ -10,7 +10,7 @@ import { Box, Button, Text, Image } from "@chakra-ui/react";
 
 // Beauty section
 //NOTE JSON data
-import beautyProduct from "../db2.json";
+import {beautyProduct} from "../db2.js";
 export const Beauty = () => {
   var settings = {
     infinite: false,
@@ -46,13 +46,13 @@ export const Beauty = () => {
   };
   return (
     <>
-      <div className="px-32 pt-12  w-[100%] m-auto ">
+      <div className="px-32 pt-12  w-[100%] m-auto">
         <div className="flex items-center justify-between ">
           <Text className="font-bold text-xl">Beauty Offers (21)</Text>
           <Link className="text-blue-600 hover:underline">View all</Link>
         </div>
 
-        <div className=" bg-white mt-2">
+        <div className=" bg-white mt-2 ">
           <Slider {...settings}>
             {beautyProduct.map((ele) => (
               <Box

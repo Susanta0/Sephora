@@ -1,6 +1,6 @@
 //NOTE react slider
 import Slider from "react-slick";
-import beautyProduct from "../db2.json";
+import {beautyProduct} from "../db2.js";
 //NOTE react slider css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

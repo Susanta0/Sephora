@@ -11,7 +11,7 @@ import gallery from "../assets/gallery.avif";
 import { Menu, MenuButton, MenuList, MenuItem, Box } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 // Components
-import Login from "../Pages/Login";
+import Login from "../HomePage/Login";
 import { useState } from "react";
 // NOTE community
 const Community = () => {
@@ -30,7 +30,7 @@ const Community = () => {
           className=" flex hover:border-b border-slate-900 items-center"
         >
           <Box className="flex gap-3 items-center">
-            <IoIosPeople fontWeight="500" />
+            <IoIosPeople fontSize={28} fontWeight="500" />
             <Box>
               <Text className="font-medium">Community</Text>
             </Box>
@@ -40,6 +40,9 @@ const Community = () => {
           w="384px"
           h="530px"
           className="border rounded-md "
+          position="absolute"
+          top={-2}
+          right={-260}
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
           autoFocus={false}

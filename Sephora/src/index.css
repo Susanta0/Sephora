@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 /* scroll bar */
 ::-webkit-scrollbar {
@@ -53,6 +54,28 @@
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   border-radius: 5px;
 }
+#guid,
+#fea {
+  transition: transform 0.5s;
+}
+#guid:hover,
+#fea:hover {
+  transform: translatey(-7px);
+}
+#product1>li:hover, #product2>li:hover, #product3>li:hover, #product4>li:hover{
+  text-decoration: underline;
+}
+
+#bathBodyDrop{
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.bathBody:hover #bathBodyDrop{
+  display: flex;
+  opacity: 1;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

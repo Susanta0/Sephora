@@ -1,4 +1,4 @@
-[
+export const beautyProduct=[
   {
     "id": 1,
     "images": [

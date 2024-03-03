@@ -5,7 +5,7 @@ import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 // NOTE Loved
 import { PiHeartStraightThin } from "react-icons/pi";
 import { useState } from "react";
-import Login from "../Pages/Login";
+import Login from "../HomePage/Login";
 const Loved = () => {
   const [open, setOpen] = useState(false);
 
@@ -24,6 +24,9 @@ const Loved = () => {
           <PiHeartStraightThin className="text-3xl" />
         </MenuButton>
         <MenuList
+        position="absolute"
+        top={-2}
+        right={-20}
           className="border w-96 bg-[#F6F6F8] rounded-md"
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}

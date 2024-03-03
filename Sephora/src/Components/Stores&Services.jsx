@@ -1,5 +1,5 @@
 // NOTE store
-import { Menu, MenuButton, MenuList, MenuItem, Box} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem, Box } from "@chakra-ui/react";
 import { Link, Text } from "@chakra-ui/react";
 import { LuMapPin } from "react-icons/lu";
 //ANCHOR image
@@ -37,9 +37,12 @@ const Store = () => {
       </MenuButton>
 
       <MenuList
-      w="384px"
-      bg="#F6F6F8"
-      h="517px"
+        w="384px"
+        bg="#F6F6F8"
+        h="517px"
+        position="absolute"
+        right={-260}
+        top={-2}
         onMouseEnter={handleOpen}
         onMouseLeave={handleClose}
         autoFocus={false}
@@ -56,7 +59,7 @@ const Store = () => {
           <LuMapPin />
           <span className="font-bold px-2 hover:underline">Find a Sephora</span>
         </MenuItem>
-        <MenuItem bg="white" mt={1.5} pt={4} pb={4} >
+        <MenuItem bg="white" mt={1.5} pt={4} pb={4}>
           <div className="flex gap-3">
             <img src={storageImage1} alt="images1" />
             <div>
@@ -67,7 +70,7 @@ const Store = () => {
             </div>
           </div>
         </MenuItem>
-        <MenuItem bg="white" className="border-t-2" pt={3} pb={4} >
+        <MenuItem bg="white" className="border-t-2" pt={3} pb={4}>
           <div className="flex gap-3">
             <img src={storageImage2} alt="images1" />
             <div>
@@ -95,12 +98,22 @@ const Store = () => {
             <div>
               <h4 className="font-medium">Events</h4>
               <p className="text-xs">
-                Learn about brands, try new products, and more at our in-store events
+                Learn about brands, try new products, and more at our in-store
+                events
               </p>
             </div>
           </div>
         </MenuItem>
-        <MenuItem bg="white"className="rounded-b-lg" fontSize={14} mt={1.5} pt={2} h={12} gap={3} display="flex">
+        <MenuItem
+          bg="white"
+          className="rounded-b-lg"
+          fontSize={14}
+          mt={1.5}
+          pt={2}
+          h={12}
+          gap={3}
+          display="flex"
+        >
           <Link color="blue" className="hover:underline">
             My Reservations
           </Link>

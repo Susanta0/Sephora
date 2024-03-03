@@ -12,13 +12,15 @@ import recomen from "../assets/recommendations.svg";
 // Chakra UI
 import { Menu, MenuButton, MenuList, MenuItem, Image } from "@chakra-ui/react";
 // import { Button } from "@chakra-ui/react";
-import { useState } from "react";
-import Login from "../Pages/Login";
+import { useContext, useState } from "react";
+import Login from "../HomePage/Login";
 // react icon
 import { VscLock } from "react-icons/vsc";
-
+import { AuthContext } from "../Context/AuthContext";
 // NOTE signin
 const Signin = () => {
+ 
+  const {isAuth}=useContext(AuthContext)
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -35,13 +37,23 @@ const Signin = () => {
         >
           <div className="flex gap-3 items-center">
             <Image w="30px" src={signlogo} />
-            <div className=" ">
+            {!isAuth ? 
+             <div className=" ">
+              
               <h3 className="font-medium text-start">Sign in</h3>
               <p className="text-xs">for FREE Shipping 🚚</p>
+            </div>: <div>
+              <h2>Wellcome 🧑‍💻</h2>
             </div>
+             }
+           
           </div>
         </MenuButton>
         <MenuList
+        position="absolute"
+        right={-260}
+        top={-2}
+        
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
           autoFocus={false}
@@ -71,7 +83,7 @@ const Signin = () => {
             <MenuItem bg="white" className="px-3 py-3 flex-col border">
               <div className="w-full flex items-center gap-3">
                 <img src={round} alt="Beauty round" />
-                <h2 className="hover:underline font-medium">
+                <h2 className="hover:underline font-medium text-sm">
                   Beauty Preferences
                 </h2>
                 <div className="w-28 h-2 ml-10 bg-[#F6F6F8] rounded-full"></div>
@@ -82,7 +94,7 @@ const Signin = () => {
             </MenuItem>
             <MenuItem bg="white" className="px-3 py-2 flex border">
               <div className="w-full">
-                <h2 className="hover:underline font-medium">
+                <h2 className="hover:underline font-medium text-sm">
                   Beauty Insider Summary
                 </h2>
                 <p className="text-xs">View activity savings, benefits</p>
@@ -94,7 +106,7 @@ const Signin = () => {
               className="px-3 py-2 flex justify-between border"
             >
               <div>
-                <h2 className="font-medium hover:underline">Rewards Bazaar</h2>
+                <h2 className="font-medium hover:underline text-sm">Rewards Bazaar</h2>
                 <p className="text-xs">Redeem items, samples, more</p>
               </div>
               <div className="mr-6">
@@ -103,7 +115,7 @@ const Signin = () => {
               </div>
             </MenuItem>
             <MenuItem bg="white" className="px-3 py-2 flex-col border">
-              <h2 className="font-medium w-full hover:underline">
+              <h2 className="font-medium w-full hover:underline text-sm">
                 Beauty Insider Challenges{" "}
                 <span className="bg-black text-white text-xs rounded-sm">
                   NEW
@@ -118,7 +130,7 @@ const Signin = () => {
                 <img src={mark} alt="mark" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">Buy it Again</h2>
+                <h2 className="font-medium hover:underline text-sm">Buy it Again</h2>
                 <p className="text-xs">
                   Reorder from in-store and online purchases
                 </p>
@@ -129,7 +141,7 @@ const Signin = () => {
                 <img src={order} alt="order" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">Orders</h2>
+                <h2 className="font-medium hover:underline text-sm">Orders</h2>
                 <p className="text-xs">View & track online or pickup orders</p>
               </div>
             </MenuItem>
@@ -138,7 +150,7 @@ const Signin = () => {
                 <img src={auto} alt="auto refrese" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">Auto-Replenish</h2>
+                <h2 className="font-medium hover:underline text-sm">Auto-Replenish</h2>
                 <p className="text-xs">View and manage your aubscriptions</p>
               </div>
             </MenuItem>
@@ -147,7 +159,7 @@ const Signin = () => {
                 <img src={heart} alt="heart" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">Loves</h2>
+                <h2 className="font-medium hover:underline text-sm">Loves</h2>
                 <p className="text-xs">View saved products</p>
               </div>
             </MenuItem>
@@ -156,7 +168,7 @@ const Signin = () => {
                 <img src={account} alt="account" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">Account Setting</h2>
+                <h2 className="font-medium hover:underline text-sm">Account Setting</h2>
                 <p className="text-xs">
                   Payment, contact info, addresses, password
                 </p>
@@ -167,7 +179,7 @@ const Signin = () => {
                 <img src={card} alt="card" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">
+                <h2 className="font-medium hover:underline text-sm">
                   Sephora Credit Card Program
                 </h2>
                 <p className="text-xs">Apply</p>
@@ -178,7 +190,7 @@ const Signin = () => {
                 <VscLock className="text-2xl" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">
+                <h2 className="font-medium hover:underline text-sm">
                   Same-Day Unlimited
                 </h2>
                 <p className="text-xs">Get Unlimited Free Same-Day Delivery</p>
@@ -189,7 +201,7 @@ const Signin = () => {
                 <img src={reserv} alt="reservations" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">Reservations</h2>
+                <h2 className="font-medium hover:underline text-sm">Reservations</h2>
                 <p className="text-xs">Manage your services, classes, events</p>
               </div>
             </MenuItem>
@@ -198,7 +210,7 @@ const Signin = () => {
                 <img src={recomen} alt="card" />
               </div>
               <div>
-                <h2 className="font-medium hover:underline">
+                <h2 className="font-medium hover:underline text-sm">
                   Beauty Advisor Recommendations
                 </h2>
                 <p className="text-xs">
