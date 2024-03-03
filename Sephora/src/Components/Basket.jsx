@@ -20,22 +20,21 @@ import { PiVanThin } from "react-icons/pi";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
 
 import { useContext, useEffect, useState } from "react";
-import Login from "../HomePage/Login";
 import { AuthContext } from "../Context/AuthContext";
 import { Link } from "react-router-dom";
 
 const Basket = () => {
   const { isAuth } = useContext(AuthContext);
 
-const [basketItem,setBasketItem]=useState([])
+  const [basketItem, setBasketItem] = useState([]);
 
-  useEffect(()=> {
-    if(isAuth){
-       const basketItems = JSON.parse(localStorage.getItem("basket")) || [];
-       setBasketItem(basketItems)
+  useEffect(() => {
+    if (isAuth) {
+      const basketItems = JSON.parse(localStorage.getItem("basket")) || [];
+      setBasketItem(basketItems);
     }
-  },[isAuth])
- 
+  }, [setBasketItem, isAuth]);
+
   const removeItem = (ind) => {
     const updatedBasket = [...basketItem];
     updatedBasket.splice(ind, 1);
@@ -50,7 +49,6 @@ const [basketItem,setBasketItem]=useState([])
     <>
       <Menu isOpen={open} onClose={handleClose}>
         <MenuButton
-          
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
           onClick={() => setOpen(!open)}
@@ -74,73 +72,65 @@ const [basketItem,setBasketItem]=useState([])
             bg="white"
             className="py-6 border-t-2 rounded-b-lg px-3 font-bold text-sm bg-white flex-col w-full"
           >
-
-
-{basketItem.length > 0 ? (
-  <div>
-    {basketItem.map((ele, ind) => (
-              
-      <Box
-      display="flex"
-      w="100%"
-      p={2}
-      key={ele.map}
-      style={{boxShadow:"rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset", borderRadius:"5px"}}
-    >
-      <Box>
-        <Image w="200px" src={ele.images[0]} alt="product image" />
-      </Box>
-      <Box>
-        <Text className="text-xs">{ele.title}</Text>
-        <Text className="text-xs font-normal" mt={3}>{ele.paragraph}</Text>
-        <Text className="text-xs" mt={10}>{ele.moreDetails.size}</Text>
-      </Box>
-      <Box className="flex-col text-center">
-        <Link className="text-xs font-normal text-blue-500" to="/}">View All</Link>
-        <Text mt={5}>{ele.price}</Text>
-        <Button onClick={()=>removeItem(ind)} mt={9} bg="black"color="white" border="1px solid" fontSize="10px" h={5} w={20}>Remove Item</Button>
-      </Box>
-    </Box>
-
-
-            ))} 
-  </div>
-    
-                                   
-      ) : (
-    <>
-  
-        <p className='font-bold text-2xl'>Your cart is empty.</p>
-    </>
-                )}
-
-
-              {/* {basketItem.length> 0 ? (
-                {}
-              ): <div>hhh</div>}
-            */}
-             {/* <Box
-                  display="flex"
-                  w="100%"
-                  p={2}
-                  key={ele.map}
-                  style={{boxShadow:"rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset", borderRadius:"5px"}}
-                >
-                  <Box>
-                    <Image w="200px" src={ele.images[0]} alt="product image" />
+            {basketItem.length > 0 ? (
+              <div>
+                {basketItem.map((ele, ind) => (
+                  <Box
+                    display="flex"
+                    w="100%"
+                    p={2}
+                    key={ele.map}
+                    style={{
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    <Box>
+                      <Image
+                        w="200px"
+                        src={ele.images[0]}
+                        alt="product image"
+                      />
+                    </Box>
+                    <Box>
+                      <Text className="text-xs">{ele.title}</Text>
+                      <Text className="text-xs font-normal" mt={3}>
+                        {ele.paragraph}
+                      </Text>
+                      <Text className="text-xs" mt={10}>
+                        {ele.moreDetails.size}
+                      </Text>
+                    </Box>
+                    <Box className="flex-col text-center">
+                      <Link
+                        className="text-xs font-normal text-blue-500"
+                        to="/}"
+                      >
+                        View All
+                      </Link>
+                      <Text mt={5}>{ele.price}</Text>
+                      <Button
+                        onClick={() => removeItem(ind)}
+                        mt={9}
+                        bg="black"
+                        color="white"
+                        border="1px solid"
+                        fontSize="10px"
+                        h={5}
+                        w={20}
+                      >
+                        Remove Item
+                      </Button>
+                    </Box>
                   </Box>
-                  <Box>
-                    <Text className="text-xs">{ele.title}</Text>
-                    <Text className="text-xs font-normal" mt={3}>{ele.paragraph}</Text>
-                    <Text className="text-xs" mt={10}>{ele.moreDetails.size}</Text>
-                  </Box>
-                  <Box className="flex-col text-center">
-                    <Link className="text-xs font-normal text-blue-500" to="/}">View All</Link>
-                    <Text mt={5}>{ele.price}</Text>
-                    <Button onClick={()=>removeItem(ind)} mt={9} bg="black"color="white" border="1px solid" fontSize="10px" h={5} w={20}>Remove Item</Button>
-                  </Box>
-                </Box>
-             */}
+                ))}
+              </div>
+            ) : (
+              <>
+                <p className="font-bold text-2xl">Your cart is empty.</p>
+              </>
+            )}
           </MenuItem>
 
           <MenuItem bg="white" className="px-3 py-4 gap-4 bg-white border-t-2">

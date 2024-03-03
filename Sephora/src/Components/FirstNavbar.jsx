@@ -11,17 +11,17 @@ import Logo, { FreeTrial } from "./FreeTrail&Logo";
 const FirstNavbar = () => {
   return (
     <>
-      <FreeTrial/>
+      <FreeTrial />
       <div className="flex items-center h-24 px-28">
-        <Logo/>
-        <Search/>
+        <Logo />
+        <Search />
         <div className="flex gap-6 items-center">
-          <Store/>
-          <Community/>
+          <Store />
+          <Community />
           <h2 className="text-2xl font-thin">|</h2>
-          <Signin/>
-          <Loved/>
-          <Basket/>
+          <Signin />
+          <Loved />
+          <Basket />
         </div>
       </div>
     </>

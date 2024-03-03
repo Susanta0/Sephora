@@ -19,36 +19,32 @@ import { useToast } from "@chakra-ui/react";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 export const Quickview = ({ QuickOpen2, QuickClose, selectedProduct }) => {
-  console.log(selectedProduct);
   const sizes = ["xs", "sm", "md", "lg", "xl", "2xl"];
-  const {isAuth}=useContext(AuthContext)
+  const { isAuth } = useContext(AuthContext);
 
-const toast= useToast()
-  const addToBasket = ()=> {
-
-    if(!isAuth){
-      console.log("susnta");
-      console.log(isAuth);
-      
-    } else {
-      toast({
-          title: "Item Added successfully to cart",
-          status: "success",
-          duration: 3000, 
-          isClosable: true,
-          icon: <IoCheckmarkDoneCircle/>,
-          transition: Slide,
-      });
-
- const basketItems = JSON.parse(localStorage.getItem("basket")) || [];
+  const toast = useToast();
+  const addToBasket = () => {
+    if (isAuth) {
+      const basketItems = JSON.parse(localStorage.getItem("basket")) || [];
 
       basketItems.push(selectedProduct);
 
       localStorage.setItem("basket", JSON.stringify(basketItems));
-  QuickClose();
-  console.log("Yes");
-  }
-};
+      QuickClose();
+      console.log("Yes");
+
+      toast({
+        title: "Item Added successfully to cart",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+        icon: <IoCheckmarkDoneCircle />,
+        transition: Slide,
+      });
+    } else {
+      console.log("erro");
+    }
+  };
 
   return (
     <>
@@ -125,7 +121,7 @@ const toast= useToast()
                     </Select>
                     <Box display="flex" flexDirection="column" gap={5}>
                       <Button
-                      onClick={addToBasket}
+                        onClick={addToBasket}
                         style={{
                           background: "red",
                           color: "white",

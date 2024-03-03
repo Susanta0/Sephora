@@ -1,7 +1,6 @@
-
 //NOTE react slider
 import Slider from "react-slick";
-import {data}from "../db.js";
+import { data } from "../db.js";
 //NOTE react slider css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,19 +14,19 @@ const Home = ({ heading, linkText }) => {
   const { isOpen, onClose, onOpen } = useDisclosure();
 
   const [selectedProduct, setSelectedProduct] = useState(null);
-  
+
   const handleButtonClick = (product) => {
     if (!isOpen) {
       setSelectedProduct(product);
-    onOpen();
+
+      onOpen();
     }
   };
 
   const handleModalClose = () => {
     onClose();
-    setSelectedProduct(null); // Clear the selected product when the modal is closed
+    setSelectedProduct(null);
   };
-  
 
   var settings = {
     infinite: false,

@@ -22,9 +22,12 @@ const AllRoutes = () => {
       <Selling heading="Selling Fast" />
       <Rewards />
       <Featured title="Featured Categories" para="Shop what’s popular now." />
-      <Guidance title="Need a Little Guidance?" para="Check out our quizzes and buying guides."/>
-      <Poster2/>
-      <Footer/>
+      <Guidance
+        title="Need a Little Guidance?"
+        para="Check out our quizzes and buying guides."
+      />
+      <Poster2 />
+      <Footer />
     </>
   );
 };
