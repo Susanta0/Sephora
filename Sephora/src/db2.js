@@ -2,7 +2,7 @@ export const beautyProduct=[
   {
     "id": 1,
     "images": [
-      "./public//ImagesFolder/beauty1.avif",
+      "https://www.sephora.com/contentimages/2024-spend-more-get-more-multiworld-app-site-desktop-mobile-beauty-offers-page-banner-us-final.jpg?imwidth=240",
       "../public/ImagesFolder/rewards1.webp",
       ""
     ],
@@ -25,7 +25,7 @@ export const beautyProduct=[
   {
     "id": 2,
     "images": [
-      "./public//ImagesFolder/beauty2.avif",
+      "https://www.sephora.com/contentimages/promo/bpme/2024/February/2024-2-29-february-bpme-site-desktop-mobile-app-beauty-offers-page-banner-peter-thomas-roth-en-us-can-kohls.jpg?imwidth=240",
       "../public/ImagesFolder/rewards2.webp",
       ""
     ],
@@ -48,7 +48,7 @@ export const beautyProduct=[
   {
     "id": 3,
     "images": [
-      "./public//ImagesFolder/beauty3.webp",
+      "https://www.sephora.com/contentimages/promo/bpme/2024/February/2024-2-29-february-bpme-site-desktop-mobile-app-beauty-offers-page-banner-patrick-ta-en-us-can.jpg?imwidth=240",
       "../public/ImagesFolder/rewards3.avif",
       ""
     ],
@@ -71,7 +71,7 @@ export const beautyProduct=[
   {
     "id": 4,
     "images": [
-      "./public//ImagesFolder/beauty4.avif",
+      "https://www.sephora.com/contentimages/promo/bpme/2024/February/2024-2-29-february-bpme-site-desktop-mobile-app-beauty-offers-page-banner-nutrafol-app-only-en-us.jpg?imwidth=240",
       "../public/ImagesFolder/rewards4.webp",
       ""
     ],
@@ -94,7 +94,7 @@ export const beautyProduct=[
   {
     "id": 5,
     "images": [
-      "./public//ImagesFolder/beauty5.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/March/2024-03-01-PICKNEWNESS-slotting-promo-app-beauty-offers-banner-US-handoff.jpg?imwidth=240",
       "../public/ImagesFolder/rewards5.webp",
       ""
     ],
@@ -117,7 +117,7 @@ export const beautyProduct=[
   {
     "id": 6,
     "images": [
-      "./public//ImagesFolder/beauty6.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/March/2024-03-01-slotting-baar-app-home-page-beauty-offers-banner-1000x750-abh-US-CA-handoff.jpg?imwidth=240",
       "../public/ImagesFolder/rewards6.webp",
       ""
     ],
@@ -140,7 +140,7 @@ export const beautyProduct=[
   {
     "id": 7,
     "images": [
-      "./public//ImagesFolder/beauty7.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-29-PRETTYHAIR-slotting-promo-app-beauty-offers-banner-US.jpg?imwidth=240",
       "../public/ImagesFolder/rewards7.webp",
       ""
     ],
@@ -163,7 +163,7 @@ export const beautyProduct=[
   {
     "id": 8,
     "images": [
-      "./public//ImagesFolder/beauty8.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-2-28-skinfix-barrier-protection-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240",
       "../public/ImagesFolder/rewards8.jpg",
       ""
     ],
@@ -186,7 +186,7 @@ export const beautyProduct=[
   {
     "id": 9,
     "images": [
-      "./public//ImagesFolder/beauty9.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-15-SKINNEWNESS-slotting-promo-app-beauty-offers-banner-US-handoff.jpg?imwidth=240",
       "../public/ImagesFolder/rewards9.webp",
       ""
     ],
@@ -209,7 +209,7 @@ export const beautyProduct=[
   {
     "id": 10,
     "images": [
-      "./public//ImagesFolder/beauty10.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-24-MULTITASKERS-slotting-promo-app-beauty-offers-banner-US-CA-handoff.jpg?imwidth=240",
       "../public/ImagesFolder/rewards10.webp",
       ""
     ],
@@ -224,7 +224,7 @@ export const beautyProduct=[
     },
     "products2": {
       "title": "Mizani",
-      "paragraph": "Water Drench Hyaluronic Cloud Rich Barrier",
+      "paragraph":"Water Drench Hyaluronic Cloud Rich Barrier",
       "coins": "100 points",
       "btn": "Sign in to Access"
     }
@@ -232,7 +232,7 @@ export const beautyProduct=[
   {
     "id": 11,
     "images": [
-      "./public//ImagesFolder/beauty11.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-06-ARMANIYSL-slotting-promo-app-beauty-offers-banner-US-handoff.jpg?imwidth=240",
       "../public/ImagesFolder/rewards11.webp",
       ""
     ],
@@ -255,7 +255,7 @@ export const beautyProduct=[
   {
     "id": 12,
     "images": [
-      "./public//ImagesFolder/beauty12.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2022/November/percent-off-basket-app-content-card-promo.png?imwidth=240",
       "../public/ImagesFolder/rewards12.webp",
       ""
     ],
@@ -278,7 +278,7 @@ export const beautyProduct=[
   {
     "id": 13,
     "images": [
-      "./public//ImagesFolder/beauty13.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-2-24-vib-r-gifts-site-desktop-mobile-app-beauty-offers-page-banner-caudalie-en-us-can.jpg?imwidth=240",
       "../public/ImagesFolder/rewards13.webp",
       ""
     ],
@@ -301,7 +301,7 @@ export const beautyProduct=[
   {
     "id": 14,
     "images": [
-      "./public//ImagesFolder/beauty14.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-2-25-paulas-choice-head-to-toe-site-desktop-mobile-app-beauty-offers-page-banner-en-us.jpg?imwidth=240",
       "../public/ImagesFolder/rewards14.webp",
       ""
     ],
@@ -324,7 +324,7 @@ export const beautyProduct=[
   {
     "id": 15,
     "images": [
-      "./public//ImagesFolder/beauty15.avif",
+      "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-feb-hair-repair-site-beauty-offers-banner-1000x750-us.jpg?imwidth=240",
       "../public/ImagesFolder/rewards15.webp",
       ""
     ],
@@ -346,7 +346,7 @@ export const beautyProduct=[
   },
   {
     "id": 16,
-    "images": ["./public//ImagesFolder/beauty16.avif", "", ""],
+    "images": ["https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-18-slotting-baar-site-beauty-offers-banner-1000x750-english-ct-US-CA-handoff.jpg?imwidth=240", "", ""],
     "products1": {
       "title": "Choose a Free Trial Size ",
       "paragraph": "Enjoy hair care from Moroccanoil, Vegamour, or Crown Affair.",
@@ -365,7 +365,7 @@ export const beautyProduct=[
   },
   {
     "id": 17,
-    "images": ["./public//ImagesFolder/beauty17.png", "", ""],
+    "images": ["https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-01-slotting-baar-site-beauty-offers-banner-1000x750-english-sknfx-US-CA-handoff.jpg?imwidth=240", "", ""],
     "products1": {
       "title": "Receive a Moroccanoil Gift",
       "paragraph": "Try argan-oil-infused hair and body care. ",
@@ -384,7 +384,7 @@ export const beautyProduct=[
   },
   {
     "id": 18,
-    "images": ["./public//ImagesFolder/beauty18.avif", "", ""],
+    "images": ["https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-2-17-vib-r-gifts-site-desktop-mobile-app-beauty-offers-page-banner-moroccanoil-en-us-can.jpg?imwidth=240", "", ""],
     "products1": {
       "title": "Receive a Moroccanoil Gift",
       "paragraph": "Enjoy hair care from Moroccanoil, Vegamour, or Crown Affair.",
@@ -403,7 +403,7 @@ export const beautyProduct=[
   },
   {
     "id": 19,
-    "images": ["./public//ImagesFolder/beauty19.avif", "", ""],
+    "images": ["https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-01-slotting-baar-site-beauty-offers-banner-1000x750-english-tfcd-US-CA-handoff.jpg?imwidth=240", "", ""],
     "products1": {
       "title": "Choose a Free Trial Size",
       "paragraph": "Enjoy hair care from Moroccanoil, Vegamour, or Crown Affair.",
@@ -422,7 +422,7 @@ export const beautyProduct=[
   },
   {
     "id": 20,
-    "images": ["./public//ImagesFolder/beauty20.avif", "", ""],
+    "images": ["https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-01-bi-gamification-optimization-site-desktop-mobile-beauty-offers-banner-general-us-can.jpg?imwidth=240", "", ""],
     "products1": {
       "title": "Free Paula’s Choice Trial Size",
       "paragraph": "Try the NEW Skin Perfecting 6% Mandelic Acid + 2% Lactic Acid Liquid Exfoliant.",
@@ -441,7 +441,26 @@ export const beautyProduct=[
   },
   {
     "id": 21,
-    "images": ["./public//ImagesFolder/beauty21.avif", "", ""],
+    "images": ["https://www.sephora.com/contentimages/promo/beautyoffers/2023/September/2023-07-03-omni-convenience-optimizations-site-beauty-offers-page-banner-same-day-delivery-us-can-final.jpg?imwidth=240", "", ""],
+    "products1": {
+      "title": "Get a Skinfix Trial Size",
+      "paragraph": "Visibly plump skin with this new and improved, barrier-supporting moisturizer.",
+      "para2": "Free with $30 purchase.* Beauty Insider members only.",
+      "para3": "Online only *Exclusions/terms apply.",
+      "btn": "Apply",
+      "btn2":"Quicklook",
+      "link": "See details"
+    },
+    "products2": {
+      "title": "Mizani",
+      "paragraph": "25 Miracle Milk Heat Protectant Leave-In",
+      "coins": "100 points",
+      "btn": "Sign in to Access"
+    }
+  },
+  {
+    "id": 22,
+    "images": ["https://www.sephora.com/contentimages/promo/freeship2021/2022-08-01-free-ship-site-beauty-offers-page-banner-us-can-final.jpg?imwidth=240", "", ""],
     "products1": {
       "title": "Get a Skinfix Trial Size",
       "paragraph": "Visibly plump skin with this new and improved, barrier-supporting moisturizer.",
