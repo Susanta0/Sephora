@@ -43,9 +43,9 @@ export const Selling = ({ heading }) => {
     ],
   };
   return (
-    <>
-      <div className="px-32 pt-12  w-[100%] m-auto">
-        <div className="">
+   
+      <div id="sellingContainer" className="px-32 pt-12  w-[100%] m-auto">
+        <div className="sellingHeading">
           <h1 className="font-bold text-xl">{heading}</h1>
         </div>
 
@@ -101,6 +101,6 @@ export const Selling = ({ heading }) => {
           </Slider>
         </div>
       </div>
-    </>
+   
   );
 };

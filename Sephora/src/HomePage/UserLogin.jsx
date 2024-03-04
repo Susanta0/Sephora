@@ -17,6 +17,7 @@ import { useToast } from "@chakra-ui/react";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { RxCrossCircled } from "react-icons/rx";
 import { AuthContext } from "../Context/AuthContext";
+import { UserRegister } from "./UserRegister";
 export function UserLogin({ isOpen, onClose}) {
   const [form, setForm] = useState({
     email: "",

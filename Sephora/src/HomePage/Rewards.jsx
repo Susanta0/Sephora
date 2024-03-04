@@ -47,8 +47,8 @@ export const Rewards = () => {
     };
     return (
       <>
-        <div className="px-32 pt-12  w-[100%] m-auto ">
-          <div className="flex items-center justify-between ">
+        <div id="rewardsContainer" className="px-32 pt-12  w-[100%] m-auto ">
+          <div id="reawardsHeading" className="flex items-center justify-between ">
             <Text className="font-bold text-xl">Beauty Insider Rewards</Text>
             <Link className="text-blue-600 hover:underline">View all</Link>
           </div>

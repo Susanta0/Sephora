@@ -11,18 +11,30 @@ const Banner = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        
+        }
+      },
+    ]
   };
 
   return (
-    <div className="">
-      <div className="mt-2 px-8 bg-white">
+    <div id="bannercontainer">
+      <div id="bannercontainerChild" className="mt-2 px-8 bg-white">
         <Slider{...settings}>
           {bannerData.map((ele) => (
-            <div style={{border:"1px solid"}} key={ele.id} className="-ml-1 cursor-pointer">
-              <div className="">
+            <div id="bannercontent" style={{border:"1px solid"}} key={ele.id} className="-ml-1 cursor-pointer">
+              <div className="bannerImages">
                 <img className="rounded-t-md  w-[595px] h-[363.33px] " src={ele.image} alt="image" />
               </div>
               <div
+              id="textcontainer"
                 className=" flex-col gap-3 h-[150px] pl-6 pt-6 rounded-b-md"
                 style={{
                   backgroundColor:
@@ -44,7 +56,7 @@ const Banner = () => {
                 <h1 className="text-xl font-bold">{ele.name}</h1>
                 <p className="text-sm hover:underline">{ele.paragraph}</p>
                 <div className="mt-3 text-sm font-bold flex items-center gap-2">
-                  <Link className="hover:underline">{ele.shop}</Link>
+                  <Link id="linkShop" className="hover:underline">{ele.shop}</Link>
                   <PiCaretRightFill />
                 </div>
               </div>

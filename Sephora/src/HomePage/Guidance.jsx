@@ -1,17 +1,17 @@
 // db3.json file
 // import data from "../db3.js";
-import {data} from "../db3.js"
+import { data } from "../db3.js";
 const Guidance = ({ title, para }) => {
   return (
     <>
-      <div className="mt-10 px-32">
-        <div className="flex justify-between ">
-          <div>
+      <div id="featuredContainer" className="mt-10 px-32">
+        <div  id="featuredContainerChild"className="flex justify-between ">
+          <div id="feaGud_Heading">
             <h2 className="font-bold text-xl">{title}</h2>
             <p className="text-sm">{para}</p>
           </div>
 
-          <div className="flex gap-2">
+          <div id="featuredContain" className="flex gap-2  ">
             {data.map((ele) => (
               <div
                 id="guid"

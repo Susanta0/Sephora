@@ -40,13 +40,15 @@ export const Poster = () => {
         px={32}
         pt={12}
         m="auto"
+        id="postercontainer"
       >
         {posterData.map((ele) => (
-          <Box key={ele.id} borderRadius="5px">
-            <Box w="fit-content">
+          <Box id="singlePosterContent" key={ele.id} borderRadius="5px">
+            <Box id="posterImageContainer" w="fit-content">
               <Image className="rounded-t-md" m="auto" src={ele.image} />
             </Box>
             <Box
+            id="posterContenttextDiv"
               pt={6}
               pb={6}
               px={3}

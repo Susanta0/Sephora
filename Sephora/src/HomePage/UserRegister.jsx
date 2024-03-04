@@ -10,6 +10,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalCloseButton,
+  useDisclosure
 } from "@chakra-ui/react";
 import { useContext, useState } from "react";
 import { useToast } from "@chakra-ui/react";
@@ -23,6 +24,9 @@ export const UserRegister = ({ isOpen, onClose }) => {
     email: "",
     password: "",
   });
+
+
+
   const { setIsAuth } = useContext(AuthContext);
 
   const handleChange = (e) => {
@@ -52,9 +56,14 @@ export const UserRegister = ({ isOpen, onClose }) => {
         icon: <IoCheckmarkDoneCircle />,
         transition: Slide,
       });
+
+      
       setIsAuth(true);
       onClose();
+      
+      
       setShowLoginModal(true);
+
     } else {
       toast({
         title: "Please Enter Valid Credentails",
@@ -139,7 +148,7 @@ export const UserRegister = ({ isOpen, onClose }) => {
         <UserLogin
           isOpen={showLoginModal}
           onClose={() => setShowLoginModal(false)}
-        /> 
+        />
       )}
     </>
   );

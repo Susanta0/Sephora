@@ -12,10 +12,10 @@ const FirstNavbar = () => {
   return (
     <>
       <FreeTrial />
-      <div className="flex items-center h-24 px-28">
+      <div id="firstNavbar" className="flex items-center h-24 px-28">
         <Logo />
         <Search />
-        <div className="flex gap-6 items-center">
+        <div id="firstNavbarRightSection" className="flex gap-6 items-center">
           <Store />
           <Community />
           <h2 className="text-2xl font-thin">|</h2>

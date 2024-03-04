@@ -13,8 +13,9 @@ const Search = () => {
         htmlSize={4}
         className="p-1.5 pl-20  rounded-full flex-1 bg-[#F6F6F8] outline-none border-slate-950"
         placeholder="Search"
+        
       />
-      <div className="absolute left-2">
+      <div className="absolute right-2 md:hidden">
         <IoIosSearch className="text-xl" />
       </div>
     </div>

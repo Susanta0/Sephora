@@ -46,8 +46,8 @@ export const Beauty = () => {
   };
   return (
     <>
-      <div className="px-32 pt-12  w-[100%] m-auto">
-        <div className="flex items-center justify-between ">
+      <div id="beautyContainer" className="px-32 pt-12  w-[100%] m-auto">
+        <div id="beautyHeading" className="flex items-center justify-between ">
           <Text className="font-bold text-xl">Beauty Offers (21)</Text>
           <Link className="text-blue-600 hover:underline">View all</Link>
         </div>

@@ -62,9 +62,9 @@ const Home = ({ heading, linkText }) => {
   };
   return (
     <>
-      <div className="px-32 pt-12  w-[100%] m-auto">
+      <div id="homeContainer" className="px-32 pt-12  w-[100%] m-auto">
         <div className="flex items-center justify-between">
-          <h1 className="font-bold text-xl">{heading}</h1>
+          <h1 id="headingProduct" className="font-bold text-xl">{heading}</h1>
           <Link className="text-blue-600 hover:underline">{linkText}</Link>
         </div>
 

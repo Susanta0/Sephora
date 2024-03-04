@@ -15,7 +15,8 @@ const Footer = () => {
   return (
     <>
       <Box
-        className="hover:underline"
+      id="feedBack"
+        className="hover:underline "
         mt={10}
         display="flex"
         alignItems="center"
@@ -27,13 +28,14 @@ const Footer = () => {
       >
         Website feedback? Let us know ▸
       </Box>
-      <SimpleGrid bg="black">
+      <SimpleGrid id="footerContainer1" bg="black" >
         <Box
           color="white"
           display="flex"
           justifyContent="space-between"
           my={10}
           mx={36}
+          id="footerContainer1Child"
         >
           <Box display="flex" alignItems="center" gap={2}>
             <FaMapMarkerAlt className="text-2xl" />
@@ -85,14 +87,15 @@ const Footer = () => {
         </Box>
       </SimpleGrid>
 
-      <SimpleGrid bg="black">
-        <hr className="border mx-32" />
+      <SimpleGrid id="footerContainer2" bg="black">
+        <hr id="hr2" className="border mx-32" />
         <Box
           bg="black"
           display="flex"
           justifyContent="space-between"
           my={10}
           mx={32}
+          id="footerContainer2Child"
         >
           <Box color="white">
             <Text fontWeight={700}>About Sephora</Text>
@@ -229,11 +232,12 @@ const Footer = () => {
               <Text className="text-xs">Canada - Français</Text>
             </Box>
           </Box>
-          <Box color="white">
-            <Box className="text-3xl font-bold">
+          
+          <Box id="inputDiv" color="white">
+            <Box id="inputDivText" className="text-3xl font-bold">
               We Belong to <br /> Something Beautiful
             </Box>
-            <Box mt="10em">
+            <Box id="inputDiv2" mt="10em">
               <Text className="text-sm font-bold">
                 Sign up for Sephora text updates
               </Text>
@@ -274,9 +278,10 @@ const Footer = () => {
             </Box>
           </Box>
         </Box>
-        <hr className="border mx-32" />
+        <hr id="hr3" className="border mx-32" />
 
         <Box
+        id="lastFooter"
           color="white"
           alignItems="center"
           display="flex"
@@ -287,7 +292,7 @@ const Footer = () => {
         >
           <Box fontSize={12}>
             <Text>© 2024 Sephora USA, Inc. All rights reserved.</Text>
-            <Box display="flex" fontSize={12} gap={6} mt={2}>
+            <Box id="lastText" display="flex" fontSize={12} gap={6} mt={2}>
               <Text>Privacy Policy</Text>
               <Text>Terms of Use</Text>
               <Text>Accessibility</Text>
@@ -301,9 +306,9 @@ const Footer = () => {
               </Box>
             </Box>
 
-            <Text mt={2}>1-877-737-4672 TTY: 1-888-866-9845</Text>
+            <Text id="privacyNumber" mt={2}>1-877-737-4672 TTY: 1-888-866-9845</Text>
           </Box>
-          <Box display="flex" fontSize={30} gap={6}>
+          <Box id="logoDiv" display="flex" fontSize={30} gap={6}>
             <FaInstagram />
             <FaSquareFacebook />
             <SlSocialTwitter />
