@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style-type: none;
 }
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -80,16 +81,70 @@
 }
 
 @media all and (min-width: 200px) and (max-width: 450px) {
-  #firstNavbar {
-    /* border: 1px solid; */
+  /*NOTE Trail */
+  #trial{
+    text-align: center;
+    font-size: .7em;
+  }
+  #tringle{
     display: none;
   }
-  #firstNavbarRightSection {
-    /* border: 1px solid; */
+/* NOTE Modal */
+.communityContainer{
+  border: 1px solid;
+  /* width: 200px; */
+  padding: 0em;
+  background-color: red;
+}
+#community_Profile{
+  /* border: 1px solid; */
+  /* width: 150px; */
+  
+}
+#firstNavbar {
+    padding: 0em .5em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+  #logo{
+    font-size: .7em;
+  }
+  #searchDiv{
+    height: 1em;
+    padding: 1em ;
     display: none;
   }
-  #bropDowncontain {
+  #searchInput>{
+  margin: 0em 3em;
+  }
+  .storageDiv1{
     border: 1px solid;
+  }
+  #textDiv1>*{
+    display: none;
+  }
+  #firstNavbarRightSection{
+    padding: 0em .5em;
+  }
+  #hr_nav{
+    display: none;
+  }
+  
+  #com{
+    display: none;
+  }
+  #basketLoGo{
+    font-size: 1.6em;
+  }
+  #free{
+    display: none;
+  }
+  #signText{
+    display: none;
+  }
+
+  #bropDowncontain {
     display: none;
   }
   #bropDowncontain > a {
@@ -129,6 +184,9 @@
   #beautyHeading>*{
     font-size: 15px;
   }
+  #hr-2{
+    margin-top: .8em;
+  }
   /*NOTE Poster1 &Poster2 */
   #postercontainer {
     margin-top: 2em;
@@ -140,6 +198,7 @@
   #hr{
     margin: 1em ;
   }
+  
   #singlePosterContent {
     
     
@@ -166,9 +225,13 @@
     font-size: 15px;
     margin-top: 1em;
   }
+  #hr-1{
+    margin-top: .5em;
+  }
   /* NOTE Featured & Gudance */
   #featuredContainer {
     padding: 0em 1em;
+    margin: .5em;
   }
   #feaGud_Heading>h2{
     font-size: 1em;
@@ -191,6 +254,9 @@
   ::-webkit-scrollbar-thumb {
         background: gray;
     }
+    #hr0{
+      margin-top: .5em;
+    }
     /* NOTE Footer1 */
     #feedBack{
       margin: 0em;
@@ -198,7 +264,7 @@
       height: 12px;
     }
   #footerContainer1 {
-    border: 1px solid;
+    
   }
   #footerContainer1Child{
     display: grid;
@@ -218,8 +284,7 @@
     width: fit-content;
   }
   #hr2{
-    /* margin: 0em 2em; */
-    display: none;
+    margin: 0em 2em;
   }
   #hr3{
     /* margin: 0em 1em; */
@@ -241,7 +306,7 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     align-items: center;
-    gap: 1em;
+    padding: 0em;
   }
   #lastText{
     font-size: 8px;

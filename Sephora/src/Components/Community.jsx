@@ -10,6 +10,8 @@ import gallery from "../assets/gallery.avif";
 // Chakra UI
 import { Menu, MenuButton, MenuList, MenuItem, Box } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
+
+
 // Components
 import Login from "../HomePage/Login";
 import { useState } from "react";
@@ -19,9 +21,12 @@ const Community = () => {
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+
   return (
     <>
-      <Menu isOpen={open} onClose={handleClose}>
+      <Menu 
+      isOpen={open} onClose={handleClose}>
         <MenuButton
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
@@ -32,22 +37,27 @@ const Community = () => {
           <Box className="flex gap-3 items-center">
             <IoIosPeople fontSize={28} fontWeight="500" />
             <Box>
-              <Text className="font-medium">Community</Text>
+              <Text id="com" className="font-medium">Community</Text>
             </Box>
           </Box>
         </MenuButton>
         <MenuList
-          w="384px"
+        w={{base: "310px", md: "384px" }} 
+        
+        right={{ base:"-190",sm: "", md:"-200px", xl:"-260px"}}
+          // w="384px"
           h="530px"
           className="border rounded-md "
           position="absolute"
           top={-2}
-          right={-260}
+          // right={-260}
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}
           autoFocus={false}
+          
         >
           <div
+          id="community_Profile"
             className="overflow-auto overflow-x-hidden"
             style={{ height: "520px" }}
           >

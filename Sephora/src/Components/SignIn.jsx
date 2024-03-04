@@ -35,23 +35,29 @@ const Signin = () => {
           // as={Button}
           className=" flex hover:border-b border-slate-900 items-center "
         >
-          <div className="flex gap-3 items-center">
-            <Image w="30px" src={signlogo} />
+          <div  className="flex gap-3 items-center">
+            <Image class="signImage" w="30px" src={signlogo} />
             {!isAuth ? 
-             <div className=" ">
+             <div>
               
-              <h3 className="font-medium text-start">Sign in</h3>
-              <p className="text-xs">for FREE Shipping 🚚</p>
+              <h3 id="signText" className="font-medium text-start">Sign in</h3>
+              <p id="free" className="text-xs">for FREE Shipping 🚚</p>
             </div>: <div>
-              <h2>Wellcome 🧑‍💻</h2>
+              <h2 >Wellcome 🧑‍💻</h2>
             </div>
              }
            
           </div>
         </MenuButton>
         <MenuList
+
+w={{base: "300px", md: "384px" }} 
+        
+right={{ base:"-120",sm: "", md:"-200px", xl:"-260px"}}
+
+
         position="absolute"
-        right={-260}
+        // right={-260}
         top={-2}
         
           onMouseEnter={handleOpen}

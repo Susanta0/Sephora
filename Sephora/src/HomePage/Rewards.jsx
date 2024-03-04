@@ -130,7 +130,7 @@ export const Rewards = () => {
                 </Box>
               ))}
             </Slider>
-            <hr className="border mx-1 mt-10" />
+            <hr id="hr-1" className="border mx-1 mt-10" />
           </div>
         </div>
       </>

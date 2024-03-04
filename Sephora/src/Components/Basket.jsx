@@ -54,12 +54,18 @@ const Basket = () => {
           onClick={() => setOpen(!open)}
           className=" flex items-center bg-transparent"
         >
-          <LiaShoppingBasketSolid className="text-3xl" />
+          <LiaShoppingBasketSolid id="basketLoGo" className="text-3xl" />
         </MenuButton>
         <MenuList
+        w={{base: "310px", md: "384px" }} 
+        
+        right={{ base:"-6",sm: "", md:"-100px"}}
+          // w="384px"
+        
+        
           position="absolute"
           top={-2}
-          right={-20}
+          // right={-20}
           className="border w-96 bg-[#F6F6F8] rounded-md"
           onMouseEnter={handleOpen}
           onMouseLeave={handleClose}

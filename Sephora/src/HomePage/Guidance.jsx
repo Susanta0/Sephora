@@ -26,7 +26,7 @@ const Guidance = ({ title, para }) => {
             ))}
           </div>
         </div>
-        <hr className="border mt-10" />
+        <hr id="hr0" className="border mt-10" />
       </div>
     </>
   );

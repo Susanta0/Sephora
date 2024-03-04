@@ -121,7 +121,7 @@ export const Beauty = () => {
               </Box>
             ))}
           </Slider>
-          <hr className="border mx-1 mt-10" />
+          <hr id="hr-2" className="border mx-1 mt-10" />
         </div>
       </div>
     </>

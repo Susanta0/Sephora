@@ -19,15 +19,15 @@ const Store = () => {
   return (
     <Menu isOpen={open} onClose={handleClose}>
       <MenuButton
+      
         onMouseEnter={handleOpen}
         onMouseLeave={handleClose}
         onClick={() => setOpen(!open)}
-        // as={Button}
         className=" flex items-center hover:border-b border-slate-900"
       >
-        <Box className="flex gap-2 items-center">
+        <Box id="storageButton" className="flex gap-2 items-center">
           <LiaStoreAltSolid className=" text-2xl " />
-          <Box>
+          <Box id="textDiv1">
             <Text fontWeight="500">Stores & Services</Text>
             <Text fontWeight={200} fontSize="12px" textAlign="left">
               Choose Your Store
@@ -37,11 +37,17 @@ const Store = () => {
       </MenuButton>
 
       <MenuList
-        w="384px"
+
+w={{base: "300px", md: "384px" }} 
+        
+right={{ base:"-60",sm: "", md:"-200px", xl:"-260px"}}
+
+      className="storageDiv1"
+        // w="384px"
         bg="#F6F6F8"
         h="517px"
         position="absolute"
-        right={-260}
+        // right={-260}
         top={-2}
         onMouseEnter={handleOpen}
         onMouseLeave={handleClose}
