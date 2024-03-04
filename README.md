@@ -15,60 +15,33 @@
 
 ## Features
 * ***User Authentication:***
- 
-    **1. Sign up and log in functionality for users.**
-  
-    **2. Secure authentication process to ensure user data safety.**
-  
- * ***Product Management:***
-   
-   **1. Single product view with detailed information, images, and reviews.**
-   
-   **2. Add to cart functionality to allow users to collect items for purchase..**
-   
-   **3. Remove from cart option for easy management.**
-
+  * Sign up and log in functionality for users.
+  * Secure authentication process to ensure user data safety.
+* ***Product Management:***
+  * Single product view with detailed information, images, and reviews.
+  * Add to cart functionality to allow users to collect items for purchase.
+  * Remove from cart option for easy management.
 * ***Navigation:***
-
-   **1. Responsive navigation with a dropdown menu for easy access to various categories and sections.**
-  
-    **2. Smooth transitions and animations for a seamless user experience.**
-
+   * Responsive navigation with a dropdown menu for easy access to various categories and sections.
+   * Smooth transitions and animations for a seamless user experience
 * ***Responsive Design:***
-
-   **1. Fully responsive design to ensure optimal user experience across different devices (desktop, tablet, mobile).**
-  
-    **2. Mobile-friendly layout with touch-friendly elements.**
-
+   * Fully responsive design to ensure optimal user experience across different devices (desktop, tablet, mobile).
+  * Mobile-friendly layout with touch-friendly elements.
 * ***UI Components:***
-  
-    **1. Utilize Chakra UI components to enhance the overall look and feel of the website.**
-  
-    **2. Consistent design elements for a polished and professional appearance.**
-
+  * Utilize Chakra UI components to enhance the overall look and feel of the website.
+  * Consistent design elements for a polished and professional appearance.
 * ***Authentication:***
-  
-    **1. Secure user authentication using industry-standard practices.**
-  
-    **2. Password recovery/reset functionality for user convenience.**
-
+  * Secure user authentication using industry-standard practices.
+  * Password recovery/reset functionality for user convenience.
 * ***Cart Management:***
-  
-    **1. Add items to the cart with a visually appealing animation.**
-  
-    **2. Remove items from the cart with a user-friendly interface.**
-  
+  * Add items to the cart with a visually appealing animation.
+  * Remove items from the cart with a user-friendly interface. 
 * ***Pop-up Notifications:***
-  
-    **1. Implement pop-up notifications for actions like successful login, item added to the cart, etc.**
-  
-    **2. Non-intrusive notifications for a smooth user experience.**
-
+   * Implement pop-up notifications for actions like successful login, item added to the cart, etc.
+  * Non-intrusive notifications for a smooth user experience.
 * ***Responsive Slideshow:***
-  
-    **1. Feature a responsive slideshow on the homepage to showcase featured products, promotions, and announcements.**
-  
-    **2. Image carousel with smooth transitions and a user-friendly interface.**
+    * Feature a responsive slideshow on the homepage to showcase featured products, promotions, and announcements.
+  * Image carousel with smooth transitions and a user-friendly interface.
 <!--  
 * ***Search Functionality:***
   
@@ -96,13 +69,33 @@
 -->
 ## Home
 
-![Screenshot](screenshots/screenshot.png)
+![Screenshot 2024-03-05 014501](https://github.com/Susanta0/Sephora/assets/130533362/209924b7-652e-4254-879a-a2626caaffa1)
 
+## Sign up
+
+![Screenshot 2024-03-05 015514](https://github.com/Susanta0/Sephora/assets/130533362/419e4c5b-dbfc-4c11-b263-0e4a01039320)
+
+## Log in
+
+![Screenshot 2024-03-05 015532](https://github.com/Susanta0/Sephora/assets/130533362/948d9916-ff6a-4b10-8b5c-27eed289ba5e)
+
+## Quickview & Add to cart
+
+![Screenshot 2024-03-05 015558](https://github.com/Susanta0/Sephora/assets/130533362/6685303c-0577-49f5-acb8-d8c9a6309709)
+
+## Product add & remove
+
+![Screenshot 2024-03-05 015849](https://github.com/Susanta0/Sephora/assets/130533362/2f58e733-44b2-4371-99a4-f534c1ee3ef7)
+
+## Responsive Scroll bar
+
+![Screenshot 2024-03-05 015634](https://github.com/Susanta0/Sephora/assets/130533362/13a8c1fe-4a19-4637-9d10-b116c41007e4)
+
+## Footer
+
+![Screenshot 2024-03-05 015659](https://github.com/Susanta0/Sephora/assets/130533362/9bc77b77-414c-4ecd-855c-3fdcf89318c1)
 
 ## Contact
 
 For inquiries or support, please contact [susanta721467@gmail.com].
 
-## Acknowledgments
-
-- Special thanks to [Name]([https://github.com/username](https://github.com/Susanta0)) for their contribution to XYZ feature.
