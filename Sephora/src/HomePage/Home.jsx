@@ -15,6 +15,7 @@ const Home = ({ heading, linkText }) => {
 
   const [selectedProduct, setSelectedProduct] = useState(null);
 
+  
   const handleButtonClick = (product) => {
     if (!isOpen) {
       setSelectedProduct(product);
@@ -64,7 +65,9 @@ const Home = ({ heading, linkText }) => {
     <>
       <div id="homeContainer" className="px-32 pt-12  w-[100%] m-auto">
         <div className="flex items-center justify-between">
-          <h1 id="headingProduct" className="font-bold text-xl">{heading}</h1>
+          <h1 id="headingProduct" className="font-bold text-xl">
+            {heading}
+          </h1>
           <Link className="text-blue-600 hover:underline">{linkText}</Link>
         </div>
 
@@ -83,19 +86,20 @@ const Home = ({ heading, linkText }) => {
                       alt="product image"
                     />
                     <Button
-                      // onClick={onOpen}
-                      onClick={() => handleButtonClick(ele)}
+                    onClick={() => handleButtonClick(ele)}
                       _hover={{ bg: "dimgray" }}
                       fontSize="12"
-                      h={6}
-                      top={40}
                       fontWeight={700}
                       color="white"
                       bg="rgba(0, 0, 0, 0.7)"
+                      w="85%"
+                      h={7}
+                      top={40}
                       id="btn"
                     >
                       {ele.btn}
                     </Button>
+
                     <Text
                       position={"absolute"}
                       top={5}

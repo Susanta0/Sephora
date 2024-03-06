@@ -1,6 +1,6 @@
 // React Icon
 import { RxTriangleRight } from "react-icons/rx";
-import { RxHamburgerMenu } from "react-icons/rx";
+
 //NOTE freetrail
 export const FreeTrial = () => {
   return (

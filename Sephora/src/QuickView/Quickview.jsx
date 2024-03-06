@@ -50,7 +50,7 @@ export const Quickview = ({ QuickOpen2, QuickClose, selectedProduct }) => {
     <>
       <Modal isOpen={QuickOpen2} onClose={QuickClose} size={sizes}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent border="2px solid red" width="60%">
           <ModalHeader>
             <ModalCloseButton />
           </ModalHeader>

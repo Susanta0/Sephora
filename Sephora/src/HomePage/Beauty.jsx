@@ -7,10 +7,9 @@ import { Link } from "react-router-dom";
 
 import { Box, Button, Text, Image } from "@chakra-ui/react";
 
-
 // Beauty section
 //NOTE JSON data
-import {beautyProduct} from "../db2.js";
+import { beautyProduct } from "../db2.js";
 export const Beauty = () => {
   var settings = {
     infinite: false,
@@ -127,4 +126,3 @@ export const Beauty = () => {
     </>
   );
 };
-
